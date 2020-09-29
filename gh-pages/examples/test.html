@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PackageTemplateWebpack - Test</title>
+</head>
+
+<style>
+
+	* {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	
+	body {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+	
+	#canvas {
+		width: 100%;
+		height: 100%;
+	}
+	
+</style>
+
+<body>
+	
+	<canvas id="canvas"></canvas>
+
+	<script type="module">
+
+		import * as PackageTemplateWebpack from '../../build/package-template-webpack.module.js';
+
+		let test = new PackageTemplateWebpack.Test();
+		test.getHello();
+		
+	</script>
+
+</body>
+</html>
